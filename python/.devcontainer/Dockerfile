@@ -1,1 +1,1 @@
-FROM mcr.microsoft.com/devcontainers/python:1-3.13-bookworm@sha256:0aa711e570b306c02946cdda67587ce8c65978dbb65691341cbcfd4854dfcfff
+FROM mcr.microsoft.com/devcontainers/python:3.9-bookworm@sha256:cd695a402d77da11286e0d6b5ba96dfafd88757977d480a0a98dcbc7d2328441
