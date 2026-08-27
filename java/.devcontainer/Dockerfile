@@ -1,1 +1,1 @@
-FROM mcr.microsoft.com/devcontainers/java:1-21-bookworm@sha256:0af991049cded4b8d5a90d2614289ceec390779ad6a3e4b70957e2b4f3bb1230
+FROM mcr.microsoft.com/devcontainers/java:3.0-bookworm@sha256:30ec03ecd37ef48e9fe5788d7cd62695d6ab604adec698b77b23e9634dbb7b76
