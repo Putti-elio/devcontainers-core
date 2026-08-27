@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/cpp:1-bookworm@sha256:7276064ebe6540274de9c8e29097a955724b21b1c7f2b087587b55a51f7a958b
+FROM mcr.microsoft.com/devcontainers/cpp:2-bookworm@sha256:80fb33a875a92d2cf7bc20a4b551b0dd94b789d92899041153c72bd7a52dc511
 
 RUN apt-get update \
     && apt-get install --no-install-recommends -y clang-format clang-tidy gdb \
