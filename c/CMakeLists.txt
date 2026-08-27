@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.25)
+project(c_template C)
+set(CMAKE_C_STANDARD 23)
+add_compile_options(-Wall -Wextra -Werror)
+add_executable(c-template src/main.c)
+enable_testing()
+add_test(NAME c-template COMMAND c-template)

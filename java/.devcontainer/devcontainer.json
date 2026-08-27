@@ -1,0 +1,9 @@
+{
+  "name": "Java 21",
+  "build": { "dockerfile": "Dockerfile" },
+  "customizations": {
+    "vscode": {
+      "extensions": ["redhat.java", "vscjava.vscode-java-debug"]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.25)
+project(cpp_template CXX)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_compile_options(-Wall -Wextra -Werror)
+add_executable(cpp-template src/main.cpp)
+enable_testing()
+add_test(NAME cpp-template COMMAND cpp-template)

@@ -1,0 +1,6 @@
+{
+	"name": "Web (Bun)",
+	"build": { "dockerfile": "Dockerfile" },
+	"postCreateCommand": "bun install --frozen-lockfile",
+	"customizations": { "vscode": { "extensions": ["biomejs.biome"] } }
+}

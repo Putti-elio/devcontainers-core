@@ -1,0 +1,30 @@
+version: 2
+updates:
+  - package-ecosystem: docker
+    directory: /python/.devcontainer
+    schedule:
+      interval: weekly
+  - package-ecosystem: docker
+    directory: /rust/.devcontainer
+    schedule:
+      interval: weekly
+  - package-ecosystem: docker
+    directory: /go/.devcontainer
+    schedule:
+      interval: weekly
+  - package-ecosystem: docker
+    directory: /java/.devcontainer
+    schedule:
+      interval: weekly
+  - package-ecosystem: docker
+    directory: /c/.devcontainer
+    schedule:
+      interval: weekly
+  - package-ecosystem: docker
+    directory: /cpp/.devcontainer
+    schedule:
+      interval: weekly
+  - package-ecosystem: docker
+    directory: /web/.devcontainer
+    schedule:
+      interval: weekly

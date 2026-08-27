@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-template"
+version = "0.1.0"
+requires-python = ">=3.13"
+
+[project.optional-dependencies]
+dev = [
+  "debugpy==1.8.16",
+  "pytest==8.4.1",
+  "ruff==0.12.8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"

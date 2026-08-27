@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+set -eu
+
+base_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+properties="$base_dir/.mvn/wrapper/maven-wrapper.properties"
+distribution_url=$(grep '^distributionUrl=' "$properties" | cut -d= -f2-)
+expected_sha512=$(grep '^distributionSha512Sum=' "$properties" | cut -d= -f2-)
+archive_name=${distribution_url##*/}
+archive_dir=${archive_name%-bin.tar.gz}
+cache_dir="$base_dir/.mvn/wrapper/$archive_dir"
+
+if [ ! -x "$cache_dir/bin/mvn" ]; then
+  mkdir -p "$base_dir/.mvn/wrapper"
+  archive="$base_dir/.mvn/wrapper/$archive_name"
+  curl --fail --location --silent --show-error "$distribution_url" --output "$archive"
+  printf '%s  %s\n' "$expected_sha512" "$archive" | sha512sum --check --status
+  tar -xzf "$archive" -C "$base_dir/.mvn/wrapper"
+  rm "$archive"
+fi
+
+exec "$cache_dir/bin/mvn" "$@"
