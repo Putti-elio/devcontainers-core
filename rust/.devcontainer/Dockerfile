@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/rust:1-1-bookworm@sha256:fc57fb865035c5395e85246c8842b071ced6e7cde727b3c98abbcc794eaf4759
+FROM mcr.microsoft.com/devcontainers/rust:2-1-bookworm@sha256:00b297fc17b9aa2e7076ff21cf5e614f7a38f0e4746a78dd8859a91459267af6
 
 RUN apt-get update \
     && apt-get install --no-install-recommends -y gdb \
