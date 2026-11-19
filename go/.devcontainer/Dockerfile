@@ -1,1 +1,1 @@
-FROM mcr.microsoft.com/devcontainers/go:1-1.24-bookworm@sha256:1202710896e06f795a709535742b184a807e696b786423e46141d932777e29cc
+FROM mcr.microsoft.com/devcontainers/go:2.3.6-1.27-bookworm@sha256:75a84cbeca74acadcebf7df05777c77d6ade353a26c0a3ce55fc4b13bdad69cd
